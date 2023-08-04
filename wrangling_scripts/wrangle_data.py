@@ -116,7 +116,7 @@ def return_figures():
                       xaxis = dict(title = 'Year'),
                       yaxis = dict(title = 'USD'))
 
-# third chart plots percent of population that is rural from 1990 to 2015
+    # graph three
     graph_three = []
     for country in list_countries:
         df_graph_3 = df.loc[(df['country']==country)&(df['indicator']=='Total unemployment (%)')]
@@ -130,7 +130,7 @@ def return_figures():
                         xaxis = dict(title = 'Year'),
                         yaxis = dict(title = '% of Total labor force'))
     
-# fourth chart shows rural population vs arable land
+    # graph four
     graph_four = []
     for country in list_countries:
         df_graph_4 = df.loc[(df['country']==country)&(df['indicator']=='FDI')]
