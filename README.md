@@ -9,42 +9,50 @@
 5. [Licensing, Authors, and Acknowledgements](#licensing)
 6. [Learn more](#learnmore)
 
-This is a flask app that visualizes data from the world bank API. Data is pulled directly from the API and then visualized using Plotly.
-
-Develop and deploy a data dashboard as a web app using Bootstrap, Plotly, Flask and Heroku.
-
-Pull data directly from the [World Bank API](https://documents.worldbank.org/en/publication/documents-reports/api), clean the data in the back-end using pandas, and then display the results on your front-end. This would be instead of using a csv file for your data.
-
 ## Installation <a name="installation"></a>
 
+- The virtual environment [worldbankenv](https://github.com/hongtranthianh/WorldBank-Data-Dashboard/tree/main/worldbankenv) contains all Python packages that the app depends on.
+- The code should run with no issues using Python versions 3.*. Currently using `Python 3.11.3` on `Windowns 10`.
 
 ## Project Description<a name="description"></a>
 
-The main focus of this project is to practice how to pull data from an API, design a web app and deploy it to Heroku
+Develop and deploy a data dashboard as a web app using Bootstrap, Plotly, and Flask.
 
-1. Pull data from [World Bank API](https://documents.worldbank.org/en/publication/documents-reports/api)
-2. Requirements.txt file containing the bare minimum package list/lists all of the Python packages that your app depends on.
+Data was pulled directly from the [World Bank API](https://documents.worldbank.org/en/publication/documents-reports/api), clean the data in the back-end using pandas ([wrangle_data.py](https://github.com/hongtranthianh/WorldBank-Data-Dashboard/blob/main/wrangling_scripts/wrangle_data.py)) and then display the results on the front-end ([index.html](https://github.com/hongtranthianh/WorldBank-Data-Dashboard/blob/main/myapp/templates/index.html)).
+
+Output is a functioning flask app deployed in local host successfully like this screenshort:
+<p ><img src="Images/main-page.png" alt="image" ></p>
 
 ## File Structure <a name="files"></a>
 
+```
+- Images # containing images used in README.md
 
+- myapp
+|- static  # containing images for front end
+|- template
+| |- index.html  # main page of web app
+|- __init__.py  # entry point for the app
+|- routes.py  # make sure correct web address associated with correct html template
+
+- worldbankenv # virtual environment for this project
+
+- wrangling_scripts
+|- wrangle_data.py  # Read in data API and set up Plotly plots
+
+- myapp.py # Flask file running the app in local host
+
+- requirements.txt # list all of the Python packages that the app depends on
+
+- README.md
+```
 
 
 ## How to run web app  <a name="instruction"></a>
 Pull this source code from github to your local machine and run the following commands in the project's root directory:
 
 ```
-python myapp.py
-```
-
-To install the flask app, you need:
-
-- python3
-- python packages in the requirements.txt file
-
-Install the packages with
-```
-pip install -r requirements.txt
+py myapp.py
 ```
 
 ## Learn more <a name="learnmore"></a>
@@ -56,6 +64,6 @@ You can pull data from these APIs to create your own application.
 
 ### Deploy the web app in the cloud
 
-You can go beyond by deploying the worldbank dashboard app in [Heroku](https://dashboard.heroku.com/apps). This is going to be written in the [next post]()
+You can go beyond the local host by deploying the worldbank dashboard app in [Heroku](https://dashboard.heroku.com/apps). This is going to be written in the [next post]()
 
 The big internet companies offer similar services like [Amazon's Lightsail](https://aws.amazon.com/lightsail/), [Microsoft's Azure](https://learn.microsoft.com/en-us/samples/azure-samples/python-docs-hello-world/python-flask-sample-for-azure-app-service-linux/), and [Google Cloud](https://cloud.google.com/appengine/docs/legacy/standard/python/setting-up-environment). However, these services tend to require more configuration. Most of these also come with either a free tier or a limited free tier that expires after a certain amount of time.
