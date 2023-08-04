@@ -20,7 +20,7 @@ Develop and deploy a data dashboard as a web app using Bootstrap, Plotly, and Fl
 
 Data was pulled directly from the [World Bank API](https://documents.worldbank.org/en/publication/documents-reports/api), clean the data in the back-end using pandas ([wrangle_data.py](https://github.com/hongtranthianh/WorldBank-Data-Dashboard/blob/main/wrangling_scripts/wrangle_data.py)) and then display the results on the front-end ([index.html](https://github.com/hongtranthianh/WorldBank-Data-Dashboard/blob/main/myapp/templates/index.html)).
 
-Output is a functioning flask app deployed in local host successfully like this screenshort:
+The output is a functioning flask app that was deployed in local host successfully
 <p ><img src="Images/main-page.png" alt="image" ></p>
 
 ## File Structure <a name="files"></a>
@@ -49,8 +49,18 @@ Output is a functioning flask app deployed in local host successfully like this 
 
 
 ## How to run web app  <a name="instruction"></a>
-Pull this source code from github to your local machine and run the following commands in the project's root directory:
+1. Pull this repository to your local machine
 
+```
+git clone https://github.com/hongtranthianh/WorldBank-Data-Dashboard.git
+```
+
+2. Run this app locally in the project's root directory
+
+```
+python myapp.py
+```
+or
 ```
 py myapp.py
 ```
@@ -64,6 +74,6 @@ You can pull data from these APIs to create your own application.
 
 ### Deploy the web app in the cloud
 
-You can go beyond the local host by deploying the worldbank dashboard app in [Heroku](https://dashboard.heroku.com/apps). This is going to be written in the [next post]()
+You can go beyond local host by deploying the worldbank dashboard app in [Heroku](https://dashboard.heroku.com/apps). This is going to be written in [next post]()
 
 The big internet companies offer similar services like [Amazon's Lightsail](https://aws.amazon.com/lightsail/), [Microsoft's Azure](https://learn.microsoft.com/en-us/samples/azure-samples/python-docs-hello-world/python-flask-sample-for-azure-app-service-linux/), and [Google Cloud](https://cloud.google.com/appengine/docs/legacy/standard/python/setting-up-environment). However, these services tend to require more configuration. Most of these also come with either a free tier or a limited free tier that expires after a certain amount of time.
