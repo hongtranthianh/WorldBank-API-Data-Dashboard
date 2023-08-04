@@ -64,6 +64,7 @@ def clean_data(current_year = datetime.date.today().year, last_n_year = 10):
     df['indicator'] = df['indicator'].replace('Population, total','Total population')
     df['indicator'] = df['indicator'].replace('Unemployment, total (% of total labor force) (national estimate)','Total unemployment (%)')
     df['indicator'] = df['indicator'].replace('Foreign direct investment, net inflows (BoP, current US$)','FDI')
+    df['indicator'] = df['indicator'].replace('GDP per capita (current US$)','GDP per capita')
 
 
     # Data type
