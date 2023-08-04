@@ -6,8 +6,8 @@
 2. [Project Description](#description)
 3. [File Structure](#files)
 4. [How to run web app](#instruction)
-5. [Licensing, Authors, and Acknowledgements](#licensing)
-6. [Learn more](#learnmore)
+5. [Learn more](#learnmore)
+6. [Licensing, Authors, and Acknowledgements](#licensing)
 
 ## Installation <a name="installation"></a>
 
@@ -55,7 +55,18 @@ The output is a functioning flask app that was deployed in local host successful
 git clone https://github.com/hongtranthianh/WorldBank-API-Data-Dashboard.git
 ```
 
-2. Run this app locally in the project's root directory
+<p ><img src="Images/clone-repo.png" alt="image" ></p>
+
+2. Create a virtual environment for running this app with Python 3
+
+In Windows:
+```
+worldbankenv\Scripts\activate
+```
+
+<p ><img src="Images/venv.png" alt="image" ></p>
+
+3. Run the app locally in the project's root directory
 
 ```
 python myapp.py
@@ -65,8 +76,7 @@ or
 py myapp.py
 ```
 
-Running result should look like this
-<p ><img src="Images/app-running.png" alt="image" ></p>
+<p ><img src="Images/running-app.png" alt="image" ></p>
 
 
 3. Open `http://192.168.1.8:3000`
@@ -83,3 +93,7 @@ You can pull data from these APIs to create your own application.
 You can go beyond local host by deploying the worldbank dashboard app to [Heroku](https://dashboard.heroku.com/apps). This is going to be written in [next post]()
 
 The big internet companies offer similar services like [Amazon's Lightsail](https://aws.amazon.com/lightsail/), [Microsoft's Azure](https://learn.microsoft.com/en-us/samples/azure-samples/python-docs-hello-world/python-flask-sample-for-azure-app-service-linux/), and [Google Cloud](https://cloud.google.com/appengine/docs/legacy/standard/python/setting-up-environment). However, these services tend to require more configuration. Most of these also come with either a free tier or a limited free tier that expires after a certain amount of time.
+
+## Licensing, Authors, and Acknowledgements <a name="licensing"></a>
+
+Free to use the code here as you would like.
