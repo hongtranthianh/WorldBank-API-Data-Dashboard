@@ -18,7 +18,7 @@
 
 Develop and deploy a data dashboard as a web app using Bootstrap, Plotly, and Flask.
 
-Data was pulled directly from the [World Bank API](https://documents.worldbank.org/en/publication/documents-reports/api), clean the data in the back-end using pandas ([wrangle_data.py](https://github.com/hongtranthianh/WorldBank-Data-Dashboard/blob/main/wrangling_scripts/wrangle_data.py)) and then display the results on the front-end ([index.html](https://github.com/hongtranthianh/WorldBank-Data-Dashboard/blob/main/myapp/templates/index.html)).
+Data was pulled directly from the [World Bank API](https://documents.worldbank.org/en/publication/documents-reports/api), clean the data in back-end using pandas ([wrangle_data.py](https://github.com/hongtranthianh/WorldBank-Data-Dashboard/blob/main/wrangling_scripts/wrangle_data.py)) and then display the results on front-end ([index.html](https://github.com/hongtranthianh/WorldBank-Data-Dashboard/blob/main/myapp/templates/index.html)).
 
 The output is a functioning flask app that was deployed in local host successfully
 <p ><img src="Images/main-page.png" alt="image" ></p>
@@ -52,7 +52,7 @@ The output is a functioning flask app that was deployed in local host successful
 1. Pull this repository to your local machine
 
 ```
-git clone https://github.com/hongtranthianh/WorldBank-Data-Dashboard.git
+git clone https://github.com/hongtranthianh/WorldBank-API-Data-Dashboard.git
 ```
 
 2. Run this app locally in the project's root directory
@@ -65,15 +65,21 @@ or
 py myapp.py
 ```
 
+Running result should look like this
+<p ><img src="Images/app-running.png" alt="image" ></p>
+
+
+3. Open `http://192.168.1.8:3000`
+
 ## Learn more <a name="learnmore"></a>
 
-### APIs Besides the World Bank
+### Other APIs
 A few examples of public APIs include the [Twitter API](https://developer.twitter.com/en/docs), the [Google Maps API](https://mapsplatform.google.com/), and the [Facebook Graph API](https://developers.facebook.com/docs/graph-api).
 
 You can pull data from these APIs to create your own application.
 
-### Deploy the web app in the cloud
+### Deploy the app to cloud
 
-You can go beyond local host by deploying the worldbank dashboard app in [Heroku](https://dashboard.heroku.com/apps). This is going to be written in [next post]()
+You can go beyond local host by deploying the worldbank dashboard app to [Heroku](https://dashboard.heroku.com/apps). This is going to be written in [next post]()
 
 The big internet companies offer similar services like [Amazon's Lightsail](https://aws.amazon.com/lightsail/), [Microsoft's Azure](https://learn.microsoft.com/en-us/samples/azure-samples/python-docs-hello-world/python-flask-sample-for-azure-app-service-linux/), and [Google Cloud](https://cloud.google.com/appengine/docs/legacy/standard/python/setting-up-environment). However, these services tend to require more configuration. Most of these also come with either a free tier or a limited free tier that expires after a certain amount of time.
