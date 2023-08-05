@@ -12,7 +12,7 @@
 ## Installation <a name="installation"></a>
 
 - The virtual environment [worldbankenv](https://github.com/hongtranthianh/WorldBank-Data-Dashboard/tree/main/worldbankenv) contains all Python packages that the app depends on.
-- The code should run with no issues using Python versions 3.*. Currently using `Python 3.11.3` on `Windowns 10`.
+- The code should run with no issues using Python versions 3.*. Currently using `Python 3.11.3` on `Windowns 11`.
 
 ## Project Description<a name="description"></a>
 
