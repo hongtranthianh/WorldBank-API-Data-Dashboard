@@ -2,7 +2,7 @@
 
 <br>
 <div align="center">
-<img src="https://media.premiumtimesng.com/wp-content/files/2022/09/World-Bank.jpg", width='400', height='300'>
+<img src="https://media.premiumtimesng.com/wp-content/files/2022/09/World-Bank.jpg", width='600', height='500'>
 </div>
 <br>
 
