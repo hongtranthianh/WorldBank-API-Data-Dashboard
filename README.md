@@ -109,4 +109,6 @@ The big internet companies offer similar services like [Amazon's Lightsail](http
 
 ## 6. Licensing, Authors, and Acknowledgements <a name="licensing"></a>
 
+This project is part of the Data Scientist Nanodegree program from Udacity, under selected module *Software Engineer*, no solution provided. Thanks Udacity for providing a guideline for this project.
+
 Free to use the code here as you would like.
